@@ -25,6 +25,8 @@ group :development do
   gem 'sqlite3'
   gem 'better_errors'
   gem 'binding_of_caller'
+  gem 'activeadmin'
+  gem 'geocoder'
 end
 
 # To use ActiveModel has_secure_password
