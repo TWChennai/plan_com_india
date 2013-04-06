@@ -15,4 +15,6 @@
 //= require jquery_ujs
 //= require bootstrap.js
 //= require_tree ./gmaps4rails
+//= require leaflet.js
+//= require map.js
 //= require_self
