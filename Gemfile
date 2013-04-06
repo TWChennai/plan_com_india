@@ -28,6 +28,7 @@ group :development do
   gem 'activeadmin'
   gem 'geocoder'
   gem 'gmaps4rails'
+  gem 'roo'
 end
 
 # To use ActiveModel has_secure_password
