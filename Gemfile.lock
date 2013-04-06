@@ -74,6 +74,7 @@ GEM
     formtastic (2.2.1)
       actionpack (>= 3.0)
     geocoder (1.1.6)
+    gmaps4rails (1.5.6)
     has_scope (0.5.1)
     hike (1.2.1)
     i18n (0.6.1)
@@ -163,6 +164,7 @@ DEPENDENCIES
   binding_of_caller
   coffee-rails (~> 3.2.1)
   geocoder
+  gmaps4rails
   jquery-rails
   pg
   rails (= 3.2.13)
