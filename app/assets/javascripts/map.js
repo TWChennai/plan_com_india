@@ -1,6 +1,7 @@
 var Map = {
     _init: function() {
         this.map = new L.Map('map_leaflet');
+        this.overlays = [];
 
         var hull = new L.LatLng(13, 80);
         var osmUrl='http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
@@ -9,21 +10,27 @@ var Map = {
         this.map.setView(hull,11);
         this.map.addLayer(osm);
     },
-    Add: function(lat, lun, color) {
+    Add: function(index, lat, lun, color) {
         color = color ? 'red' : color;
         var circle = L.circle([lat, lun], 500, {
             color: color,
             fillColor: '#f03',
             fillOpacity: 0.5
-        }).addTo(this.map);     
+        }).addTo(this.map);  
+        this.overlays[index] = circle;   
     }
 }
 
 $(function(){
     Map._init();
     $('.slider').slider().on('slide', function(evt) {
-        var lat = 13 + (1/100  * Math.random());
-        var lun =  80 + (evt.value / 100) * Math.random();
-        Map.Add(lat,lun);
+        var index = evt.value;
+            if (this.currentIndex != index) {
+            var value = data[keys[index]]
+            if (value) {
+                Map.Add(index, value[0], value[1]);
+            }
+        }
+        this.currentIndex = index;
     });
 });

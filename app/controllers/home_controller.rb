@@ -11,7 +11,4 @@ class HomeController < ApplicationController
     end
     @final_json
 	end
-
-	def map
-	end
 end
