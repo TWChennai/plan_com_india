@@ -14,9 +14,5 @@
 //= require jquery_ujs
 //= require jquery_ujs
 //= require bootstrap.js
-//= require jquery.vmap.js
-//= require jquery.vmap.world.js
-//= require jquery.vmap.india.js
-//= require jquery-jvectormap-in-mill-en.js
-//= require map.js
+//= require_tree ./gmaps4rails
 //= require_self
