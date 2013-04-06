@@ -3,4 +3,17 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .home {
 	margin-top: 50px;
+	position: relative;
+}
+
+#map label { width: auto; display:inline; }
+#map img { max-width: none; }
+
+#map_leaflet {
+	height: 700px;
+}
+
+.slider {
+	position: fixed;
+	left: 42%;
 }

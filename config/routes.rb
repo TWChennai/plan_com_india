@@ -2,6 +2,8 @@ PlanComIndia::Application.routes.draw do
   devise_for :admin_users, ActiveAdmin::Devise.config
 
   root :to => 'home#index'
+
+  match 'home/map' => 'home#map'
   
   ActiveAdmin.routes(self)
 
