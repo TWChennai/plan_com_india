@@ -1,17 +1,15 @@
 $(function(){
+    var data = [];
     $('#map').vectorMap({
-      map: 'in_mill_en',
-      regionStyle: {
-        initial: {
-          fill: 'grey'
-        }
-      },
-      backgroundColor: '#ffffff',
-      markerStyle: {
-        initial: {
-            fill: '#F8E23B',
-            stroke: '#383f47'
-        }
-      },
+      map: 'india_en',
+        backgroundColor: '#333333',
+        color: '#ffffff',
+        hoverOpacity: 0.7,
+        selectedColor: '#666666',
+        enableZoom: true,
+        showTooltip: true,
+        values: {"in":"1430.02","zw":"5.57"},
+        scaleColors: ['#C8EEFF', '#006491'],
+        normalizeFunction: 'polynomial'
     });
 });
