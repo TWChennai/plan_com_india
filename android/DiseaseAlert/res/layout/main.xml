@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             android:orientation="vertical"
+             android:scrollbars="vertical"
+        >
+    <TableRow android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:padding="1dp">
+        <TextView android:layout_height="match_parent"
+                  android:layout_width="match_parent"
+                  android:text="@string/location">
+        </TextView>
+
+        <EditText android:id="@+id/location"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:hint="@string/tambaram_chennai"/>
+    </TableRow>
+    <TableRow android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:padding="1dp">
+        <TextView android:layout_height="match_parent"
+                  android:layout_width="match_parent"
+                  android:text="@string/diseases_name">
+        </TextView>
+
+        <EditText android:id="@+id/disease_name"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:hint="@string/malaria"/>
+    </TableRow>
+    <TableRow android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:padding="1dp">
+        <TextView android:layout_height="match_parent"
+                  android:layout_width="match_parent"
+                  android:text="@string/pincode">
+        </TextView>
+        <EditText android:id="@+id/pincode"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:hint="@string/p600015"/>
+    </TableRow>
+    <TableRow android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:padding="1dp">
+        <TextView android:layout_height="match_parent"
+                  android:layout_width="match_parent"
+                  android:text="@string/patient_count">
+        </TextView>
+        <EditText android:id="@+id/patient_count"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:hint="@string/p120"/>
+    </TableRow>
+    <TableRow android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:padding="1dp">
+
+        <DatePicker android:id="@+id/disease_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_span="2"
+                    android:hint="@string/p120"/>
+    </TableRow>
+    <TableRow android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:padding="1dp">
+        <Button android:id="@+id/report"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/report_disease"
+                android:layout_span="2"
+                android:onClick="reportDisease"/>
+    </TableRow>
+</TableLayout>
+
