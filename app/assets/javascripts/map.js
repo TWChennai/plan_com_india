@@ -25,14 +25,16 @@ $(function(){
     $('.slider').slider().on('slide', function(evt) {
         var index = evt.value;
         if (this.currentIndex != index) {
-          var value = data[keys[index]];
-    		  $.each(value, function(key, val){
-            if (value && value != "0") {
-              var victims = val[2] ? val[2] : 1;
-              Map.Add(val[0], val[1], victims);
-           }
-
-    		});
+          var key = keys[index];
+            if (key) {
+            var value = data[key];
+      		  $.each(value, function(key, val){
+              if (value && value != "0") {
+                var victims = val[2] ? val[2] : 1;
+                Map.Add(val[0], val[1], victims);
+             }
+      		});
+        }
         this.currentIndex = index;
       }
     });
