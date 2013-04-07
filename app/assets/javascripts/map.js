@@ -33,7 +33,7 @@ $(function(){
            }
 
     		});
-        this.currentIndex = index;
+          this.currentIndex = index;
       }
     });
 });
