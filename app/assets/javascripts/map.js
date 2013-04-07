@@ -27,12 +27,13 @@ $(function(){
         if (this.currentIndex != index) {
           var key = keys[index];
             if (key) {
-            var value = data[key];
-      		  $.each(value, function(key, val){
-              if (value && value != "0") {
-                var victims = val[2] ? val[2] : 1;
-                Map.Add(val[0], val[1], victims);
-             }
+              $("#date").html("As of " + key);
+              var value = data[key];
+        		  $.each(value, function(key, val){
+                if (value && value != "0") {
+                  var victims = val[2] ? val[2] : 1;
+                  Map.Add(val[0], val[1], victims);
+               }
       		});
         }
         this.currentIndex = index;
