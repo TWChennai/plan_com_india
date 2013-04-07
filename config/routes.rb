@@ -4,6 +4,7 @@ PlanComIndia::Application.routes.draw do
   root :to => 'home#map'
 
   match 'home/map' => 'home#map'
+  match 'home/about' => 'home#about'
   resources :disease
   ActiveAdmin.routes(self)
 

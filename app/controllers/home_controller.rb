@@ -11,4 +11,7 @@ class HomeController < ApplicationController
     end
     @final_json
 	end
+
+	def about
+	end
 end
