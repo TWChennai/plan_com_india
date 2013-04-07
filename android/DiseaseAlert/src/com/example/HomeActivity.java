@@ -35,7 +35,7 @@ public class HomeActivity extends Activity {
 
     public void postData() throws Exception {
         HttpClient httpclient = new DefaultHttpClient();
-        HttpPost httppost = new HttpPost("http://disease-alert.herokuapp.com/disease");
+        HttpPost httppost = new HttpPost("http://disease-tracker.herokuapp.com/disease");
         List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(2);
 
         EditText locationView = (EditText) findViewById(R.id.location);
