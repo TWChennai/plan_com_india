@@ -29,7 +29,7 @@ $(function(){
             var value = data[keys[index]];
 			console.log(value);
 			$.each(value, function(key, val){
-	           if (value) {
+	           if (value && value != "0") {
 	                Map.Add(index, val[0], val[1], val[2]);
 	           }				
 			});
