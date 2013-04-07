@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">DiseaseAlert</string>
+    <string name="report_disease">Report</string>
+    <string name="location">Location</string>
+    <string name="diseases_name">Disease</string>
+    <string name="malaria">Malaria</string>
+    <string name="tambaram_chennai">Tambaram,Chennai</string>
+    <string name="p600015">600015</string>
+    <string name="p120">120</string>
+    <string name="pincode">Pincode</string>
+    <string name="patient_count">Patient Count</string>
+    <string name="disease_date">Disease Occured</string>
+</resources>

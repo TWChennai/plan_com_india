@@ -4,7 +4,7 @@ PlanComIndia::Application.routes.draw do
   root :to => 'home#map'
 
   match 'home/map' => 'home#map'
-  
+  resources :disease
   ActiveAdmin.routes(self)
 
   # The priority is based upon order of creation:
