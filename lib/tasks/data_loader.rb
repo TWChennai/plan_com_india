@@ -1,4 +1,4 @@
-data = CSV.read('/Users/ashok/projects/plan_com_india/lib/tasks/smalldata.csv')
+data = CSV.read(Rails.root.join('lib/tasks/smalldata.csv'))
 d = Date.parse('01-01-2010')
 data.each do |line|  
   district = line[0]

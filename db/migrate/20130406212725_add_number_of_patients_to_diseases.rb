@@ -1,5 +1,5 @@
 class AddNumberOfPatientsToDiseases < ActiveRecord::Migration
   def change
-    add_column :diseases, :affect_count, :number
+    add_column :diseases, :affect_count, :integer
   end
 end

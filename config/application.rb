@@ -1,9 +1,6 @@
 require File.expand_path('../boot', __FILE__)
 
-require 'rails'
-require 'active_record/railtie'
-require 'action_controller/railtie'
-require 'sprockets/railtie'
+require 'rails/all'
 
 if defined?(Bundler)
   # If you precompile assets before deploying to production, use this line
