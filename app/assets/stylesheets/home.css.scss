@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .home {
-	margin-top: 50px;
+	margin-top: 40px;
 	position: relative;
 }
 
@@ -13,7 +13,9 @@
 	height: 700px;
 }
 
-.slider {
+#slider {
 	position: fixed;
-	left: 42%;
+	left: 10px;
+	top: 30%;
+	z-index: 999;
 }
