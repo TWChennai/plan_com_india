@@ -12,10 +12,10 @@ var Map = {
     },
     Add: function(index, lat, lun, size, color) {
         color = color ? 'red' : color;
-        var circle = L.circle([lat, lun], 1000 * size, {
+        var circle = L.circle([lat, lun], 500 * size, {
             color: color,
             fillColor: '#f03',
-            fillOpacity: 0.5
+            fillOpacity: 0.3
         }).addTo(this.map);  
         this.overlays[index] = circle;   
     }
