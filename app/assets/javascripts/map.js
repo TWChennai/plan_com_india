@@ -14,7 +14,7 @@ var Map = {
         this.map.addLayer(this.markers);
     },
     Add: function(lat, lng, victims) {
-        var marker = new L.Marker(new L.LatLng(lat, lng), { title: victims });
+        var marker = new L.Marker(new L.LatLng(lat, lng), { title: victims, singleMarkerMode : false });
         this.markers.bindPopup(victims);
         this.markers.addLayer(marker);
     }

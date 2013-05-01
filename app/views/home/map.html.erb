@@ -5,7 +5,9 @@
 <div id="map_leaflet">
 </div>
 
+
 <script type="text/javascript">
 	var data = <%= @final_json.to_json.html_safe %>
 	var keys = <%= @final_json.keys.to_json.html_safe %>
 </script>
+<script src="/assets/map.js?body=1" type="text/javascript"></script>

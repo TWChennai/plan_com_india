@@ -17,5 +17,4 @@
 //= require bootstrap-slider.js
 //= require leaflet.js
 //= require leaflet.markercluster.js
-//= require map.js
 //= require_self
